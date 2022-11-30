@@ -23,46 +23,44 @@ Git은 분산 버전관리 시스템으로 로컬 저장소와 원격 저장소�
 
 현재 Git 상태를 확인한다.   
 
-{% highlight ruby %}
-user $ git add examlpe.py
-{% endhighlight %}
+`user $ git add examlpe.py`
+
 example.py를 생성(혹은 수정)하고, 이를 Commit에 반영하고 싶은 경우.   
 
-{% highlight ruby %}
-user $ git commit -m "add example.py"
-{% endhighlight %}
+`user $ git commit -m "add example.py"`
+
 변경사항이 반영된 new commit 생성.   
 
-{% highlight ruby %}
-user $ git log
-{% endhighlight %}
+
+`user $ git log`
+
 commit 기록 확인하기 (Author, Commitor, Date, ...)   
 
 ## Git의 Branch
 코드의 흐름을 분산시켜 더욱 효율적인 개발을 가능케 한다.
 
 #### Branch 생성
-{% highlight ruby %}
-user $ git branch <branch_name>
-{% endhighlight %}
+
+`user $ git branch <branch_name>`
+
 git branch <branch 이름> 을 통해 branch 생성한다.
 
 #### Branch 전환
-{% highlight ruby %}
-user $ git checkout <branch_name>
-{% endhighlight %}
+
+`user $ git checkout <branch_name>`
+
 현재 작업중인 branch를 전환한다.
 
 #### Branch 병합
-{% highlight ruby %}
-user $ git merge <branch_name>
-{% endhighlight %}
+
+`user $ git merge <branch_name>`
+
 현재 작업중인 branch를 원하는 branch에 병합한다.
 
 #### Branch 삭제
-{% highlight ruby %}
-user $ git branch -d <branch_name>
-{% endhighlight %}
+
+`user $ git branch -d <branch_name>`
+
 git branch -d <branch 이름> 을 통해 branch 삭제한다.
 
 ## Github
@@ -74,57 +72,57 @@ git branch -d <branch 이름> 을 통해 branch 삭제한다.
 Markdown은 일반 텍스트로 `서식이 있는 문서`를 작성하는 방법이다.
 #### Markdown 문법
 `Header`
-{% highlight ruby %}
-# Header 1
-## Header 2
-### Header 3
-{% endhighlight %}
+
+`# Header 1`
+`## Header 2`
+`### Header 3`
+
 #, ##, ###, ... 으로 제목(header)을 작성한다.
 
 `Italic`
-{% highlight ruby %}
-*Italic*
-_Italic_
-{% endhighlight %}
+
+`*Italic*`
+`_Italic_`
+
 *이나 _로 감싸서 기울임체(italic)를 작성한다.
 
 `Bold`
-{% highlight ruby %}
-**Bold**
-__Bold__
-{% endhighlight %}
+
+`**Bold**`
+`__Bold__`
+
 **이나 __로 감싸서 강조체(bold)를 작성한다.
 
 `Strikethrough`
-{% highlight ruby %}
-~Strikethrough~
-{% endhighlight %}
+
+`~Strikethrough~`
+
 ~로 감싸서 취소선(strikethrough)을 작성한다.
 
 `Unordered List`
-{% highlight ruby %}
--Unordered List1
--Unordered List
-{% endhighlight %}
+
+`-Unordered List1`
+`-Unordered List`
+
 -를 앞에 붙여서 순서없는 리스트(unordered list)를 작성한다.
 
 `Ordered List`
-{% highlight ruby %}
-1.Ordered List1
-2.Ordered List2
-{% endhighlight %}
+
+`1.Ordered List1`
+`2.Ordered List2`
+
 숫자를 앞에 붙여서 순서 리스트(ordered list)를 작성한다.
 
 `Code`
-{% highlight ruby %}
-'code'
-{% endhighlight %}
+
+`'code'`
+
 `로 감싸서 코드(code)를 작성
 
 `Code Block`
-{% highlight ruby %}
-'''
-code block
-'''
-{% endhighlight %}
+
+`'''`
+`code block`
+`'''`
+
 '''...''' 으로 코드 블록(code block)을 적성한다.
