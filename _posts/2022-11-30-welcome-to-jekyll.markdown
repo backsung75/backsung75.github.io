@@ -17,9 +17,9 @@ Git은 분산 버전관리 시스템으로 로컬 저장소와 원격 저장소�
 
 #### Git에 변경사항 반영하기
 
-{% highlight ruby %}
-user $ git init
-{% endhighlight %}
+
+`user $ git init`
+
 현재 Git 상태를 확인한다.   
 
 {% highlight ruby %}
