@@ -21,7 +21,7 @@ textalic:
   title: my blog
   email: backsung75@kookmin.ac.kr
   description: >- # this means to ignore newlines until "baseurl:"
-    이곳은 제가 국민대 유레카 수업을 위해 만든 블로그 입니다.
+    this is my university homework
   baseurl: "" # the subpath of your site, e.g. /blog
   url: "" # the base hostname & protocol for your site, e.g. http://example.com
   twitter_username: jekyllrb
