@@ -12,7 +12,7 @@ Git은 분산 버전관리 시스템으로 로컬 저장소와 원격 저장소�
 저장소에 불러와 개발을 이어간다.
 
 #### 로컬 저장소 생성
-{% highlight ruby %}
+{% highlight %}
 user $ git init
 {% endhighlight %}
 현재 작업중인 디렉토리를 git 저장소로 지정한다.
