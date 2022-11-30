@@ -1,117 +1,15 @@
-# Jekyll Theme Textalic
+### 블로그 제작 전
+먼저 블로그를 만들기 전에 1주차 수업을 통해 git 과 관련된 명령어를 배우고 cmd를 통해 `git`을 관리하고 `commit`, `push` 하는것에 익숙해지도록 명령어를 써보는 시간을 가졌다.
 
-[![feature_jt](https://img.shields.io/badge/featured%20on-JT-red.svg)](https://jekyll-themes.com)
+### html 블로그 제작
+본격적으로 jekyll을 통해 블로그를 만들기 전에 html로 간단하게 웹 페이지를 만들고 이것을 github에 올려서 서버 주소를 통해 들어가는 실습을 진행했다. 실습을 통해 github에서 어떻게 웹페이지를 생성하고 접근하는지 학습했다.
 
-![mockup](./assets/img/mockup.png)
+### Jekyll 블로그 제작
+본격적으로 Jekyll을 통해 블로그를 만들기 시작했다 먼저 jekyll을 받기 위해 ruby를 설치하고 jekyll을 설치하여 사용했다. `jeykill new . --force` 명령을 실행하니 기본 웹페이지가 생겨났고 `_config.yml`을 수정하여 웹페이지의 정보를 수정했다. `jekyll serve` 명령을 실행한 뒤에 `localhost:4000`에 접속해서 확인 할 수 있었다. 정보를 수정하니 실제 웹페이지에서 나타나는 정보도 약간 달라졌다.
 
-**Textalic** is a simple, responsive jekyll theme focus on blogging. Here is a [live demo](https://unifreak.github.io/jekyll-theme-textalic/).
+### 블로그 포스트 제작
+블로그의 포스트에는 1주차 수업의 내용을 정리하는 포스트를 작성했다. git과 github, markdown에 대한 내용과 명령어를 중심으로 정리했다.
 
-## Features
+### Jekyll theme 적용
+수업중 공유받은 링크를 통해 `textalic` 테마를 적용했다 적용할 때 `bundle import` 명령어를 사용했다. 그 후 테마 제작자의 홈페이지에 있는 안내 글을 따라 테마 적용을 완료했다.
 
-- Github flavor markdown rendering
-- Letax and ascii math notation support via mathjax
-- Post category, tag and series
-- Code highlighting
-- Autogenerate table of content
-- Disqus comment
-- Fulltext search (powered by [jekyll-simple-search plugin](https://github.com/christian-fei/Simple-Jekyll-Search))
-- Google analytics
-- Atom feed
-- Sitemap
-
-## Install & Configuration
-
-### Set up jekyll
-
-Before anything, make sure you have set up jekyll correctly. See [the official jekyll doc](https://jekyllrb.com/docs/).
-
-### Clone this repo
-
-Clone this repo into to your local machine, then `cd` to the root directory of your local copy. Here is an overview of the project's file structure:
-
-```console
-jekyll-theme-textalic
-├── 404.html                    # 404 page
-├── Gemfile
-├── LICENCE
-├── _config.yml                 # Main config
-├── _data
-│   └── me.yml                  # Personal info config
-├── _demo_series                # A demo series, add series into series folder
-│   └── demo_series_post_1.md
-├── _includes
-├── _layouts
-├── _posts
-│   └── 2019-12-25-Intro.md     # Add new post here
-├── _sass
-├── about                       # About page
-├── assets                      # images, fonts, css, js...
-│   ├── img
-│   │   ├── me.png              # Replace with your own, showed in /about page
-├── favicon.ico                 # Replace with your own
-├── feed.xml
-├── index.html
-├── resume
-│   └── index.md                # You may write your resume here. linked in /about page
-├── search.json
-├── series
-└── tag
-```
-
-### Install gems
-
-Run the following to install required gems defined in `Gemfile`:
-
-```
-$ bundle install
-```
-
-### Customization
-
-Edit `_config.yml` and `_data/me.yml` to tweek the site configuration to your need. See corresponding file's comments for details.
-
-You also should replace the `/favicon.ico` and `/assets/img/me.png` file with your own.
-
-### Run locally
-
-Run `bundle exec jekyll serve --watch` to run it locally.
-
-## Blogging
-
-You can begin writting your posts under `/_posts` folder. See [Jekyll doc on posts](https://jekyllrb.com/docs/posts/).
-
-Posts are automatically grouped under site's post/category and post/tag menu. You can define post's category and tags in the post's [front matter](https://jekyllrb.com/docs/front-matter/), using `category` and `tags` front matter block.
-
-## Math Notation Support
-
-You can enable latex math support or asciimath support by adding `usemath: latex`
-or `usemath: ascii` front matter accordingly. Latex math notation must be wrapped
-inside \$\$, and asciimath notation must be wrapped inside \\`.
-
-For details and rendering result, see <https://unifreak.github.io/jekyll-theme-textalic/demo/Blogging>
-
-### Series
-
-Sereis are implemented using [Jekyll's collections](https://jekyllrb.com/docs/collections/). So to add new series, following these steps:
-
-1. Define a new collection in `_config.yml`, under `collections` configuration block
-
-    ```yaml
-    collections:
-      demo_series:
-        output: true
-    ```
-
-    Note that to make the change to `_config.yml` take effects, you **need to restart jekyll**.
-
-2. Create the series (aka collection) folder `/_demo_series`. Note that the **folder name begin with `_`**
-
-3. By adding new post under series folder, you add post under the corresponding series
-
-## Deployment
-
-See [Jekyll doc on deployment](https://jekyllrb.com/docs/deployment/)
-
-## That's it
-
-Happy blogging!
