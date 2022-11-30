@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "유레카 프로젝트"
 date:   2022-11-27 01:11:11 +0900
 categories: jekyll update
 ---
